@@ -24,14 +24,12 @@
   padding: 10px;
 
   &.success {
-    border: 1px solid green;
     background-color: green;
     color: white;
   }
 
   &.danger {
-    border: 1px solid red;
-    background-color: red;
+    background-color: #992222;
     color: white;
   }
 }
