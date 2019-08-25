@@ -1,0 +1,54 @@
+:host {
+  flex-grow: 1;
+}
+
+.result-container {
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+.score {
+  font-size: 50px;
+  text-align: center;
+}
+
+.result-items-container {
+  height: calc(100vh - 90px);
+  overflow-y: scroll;
+}
+
+.result-item {
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #eee;
+  padding: 10px;
+
+  &.success {
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+  }
+
+  &.danger {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+  }
+}
+
+.question-heading {
+  font-size: 30px;
+}
+
+.question-label {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.operand {
+  margin: 5px;
+}
+
+.answer-labels {
+  margin-top: 5px;
+}

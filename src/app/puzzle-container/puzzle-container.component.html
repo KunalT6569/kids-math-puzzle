@@ -1,0 +1,5 @@
+<div class="quiz-container">
+  <app-puzzle-start (startGame)="startGame()" *ngIf="state === QuizState.Start"></app-puzzle-start>
+  <app-puzzle-playing (gameCompleted)="gameCompleted()" *ngIf="state === QuizState.Playing"></app-puzzle-playing>
+  <app-puzzle-completed *ngIf="state === QuizState.Over"></app-puzzle-completed>
+</div>

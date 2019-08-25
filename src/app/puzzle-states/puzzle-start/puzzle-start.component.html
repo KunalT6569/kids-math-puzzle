@@ -1,0 +1,9 @@
+<div class="center btn-container">
+  <button class="btn" (click)="startQuiz()">START QUIZ</button>
+</div>
+<div class="center">
+  <div>
+    <label for="question-count">Total Questions</label>
+  </div>
+  <input [(ngModel)]="questions" id="question-count" min="1" type="number" placeholder="Total Questions">
+</div>

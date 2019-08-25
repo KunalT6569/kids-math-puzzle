@@ -1,0 +1,14 @@
+<div class="center">
+  <div class="questions-attempted c">Question {{ currentQuestion }}/{{ totalQuestions }}</div>
+  <div class="question">
+    <span class="operand">{{ puzzle.value1 }}</span>
+    <app-operator-renderer [operator]="puzzle.operator"></app-operator-renderer>
+    <span class="operand">{{ puzzle.value2 }}</span>
+  </div>
+
+  <input class="answer-input" [(ngModel)]="answerEntered" placeholder="Your Answer" type="number"
+    (keydown.enter)="submitAnswer()">
+  <div class="info-text">
+    (Press 'ENTER' to submit)
+  </div>
+</div>

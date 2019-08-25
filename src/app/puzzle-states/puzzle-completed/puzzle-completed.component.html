@@ -1,0 +1,28 @@
+<div class="result-container">
+  <div class="score">Your Score : {{ score }}/{{ totalQuestions }}</div>
+  <div class="result-items-container">
+    <div class="result-item" *ngFor="let puzzle of puzzles"
+      [ngClass]="{'success': puzzle.isAnswerValid, 'danger': !puzzle.isAnswerValid}">
+      <div class="question-heading">
+        <div class="question-label"> Question</div>
+        <span class="operand">{{ puzzle.value1 }}</span>
+        <app-operator-renderer [operator]="puzzle.operator"></app-operator-renderer>
+        <span class="operand">{{ puzzle.value2 }}</span>
+      </div>
+      <ng-template [ngIf]="!puzzle.isAnswerValid">
+        <div class="answer-labels">
+          Actual Answer {{ puzzle.answer }}
+        </div>
+        <div class="answer-labels">
+          Your Answer {{ puzzle.enteredAnswer }}
+        </div>
+      </ng-template>
+
+      <ng-template [ngIf]="puzzle.isAnswerValid">
+        <div class="answer-labels">
+          Answer {{ puzzle.answer }}
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

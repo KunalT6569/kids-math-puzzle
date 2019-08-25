@@ -1,0 +1,28 @@
+:host {
+  flex-grow: 1;
+}
+
+.questions-attempted {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.question {
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  font-size: 50px;
+}
+
+.operand {
+  margin: 10px;
+}
+
+.answer-input {
+  padding: 10px;
+}
+
+.info-text {
+  text-align: center;
+  margin-top: 20px;
+}

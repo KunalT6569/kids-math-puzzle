@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.quiz-container {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #eee;
+}
+
+.btn {
+  padding: 20px;
+  color: white;
+  background-color: #666;
+  border: none;
+  font-size: 20px;
+}
+
+input {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+}

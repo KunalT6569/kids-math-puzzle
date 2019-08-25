@@ -1,0 +1,8 @@
+<ng-template #operatorTemplate>
+  <span *ngIf="operator === MathOperator.Add">+</span>
+  <span *ngIf="operator === MathOperator.Subtract">-</span>
+  <span *ngIf="operator === MathOperator.Multiply">*</span>
+  <span *ngIf="operator === MathOperator.Divide">/</span>
+</ng-template>
+
+<span class="operand" *ngTemplateOutlet="operatorTemplate"></span>
